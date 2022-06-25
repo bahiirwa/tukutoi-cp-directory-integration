@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ruleset name="CP Plugin Directory">
+	<arg name="extensions" value="php" />
+	<file>.</file>
+	<rule ref="WordPress">
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax.Found" />
+		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EndLine" />
+		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment" />
+	</rule>
+
+	<exclude-pattern>languages</exclude-pattern>
+	<exclude-pattern>admin/js</exclude-pattern>
+	<exclude-pattern>admin/css</exclude-pattern>
+	<exclude-pattern>admin/partials/cp-plugins.txt</exclude-pattern>
+</ruleset>
